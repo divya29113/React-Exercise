@@ -2,7 +2,7 @@
 //jsx-it means javascript+xml
 //props-properties-used to pass data from one component to another component.
 //Ways of pass data-1.parent to child ,2.child to parent 3.between siblings
-//lifting the state up 
+//lifting the state up -moving the data to common parent component
 import Welcome from "./components/Welcome";
 
 
