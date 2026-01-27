@@ -8,6 +8,8 @@ import UseEffectHook from "./components/UseEffectHook";
 import UseStateHook from "./components/UseStateHook";
 import { useState } from "react";
 import Welcome from "./components/Welcome";
+import ControlComponent from "./components/controlComponent";
+import Conditionalrendering from "./components/Conditionalrendering";
 
 
 
@@ -19,10 +21,12 @@ function App() {
     <h1>This is React course</h1>
     {/*<Welcome/>
     <ReactHooks />
-    <UseStateHook/>*/}
+    <UseStateHook/>
     
     <button onClick={()=>setshowcomponent(!showcomponent)}>Rendercomponent</button> 
     {showcomponent&&<UseEffectHook/>}
+    <ControlComponent/>*/}
+    <Conditionalrendering />
 
   </div>);
 }
