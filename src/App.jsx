@@ -11,6 +11,7 @@ import Welcome from "./components/Welcome";
 import ControlComponent from "./components/controlComponent";
 import Conditionalrendering from "./components/Conditionalrendering";
 import UseMemo from "./components/UseMemo";
+import UseCallback from "./components/UseCallback";
 
 
 
@@ -27,8 +28,9 @@ function App() {
     <button onClick={()=>setshowcomponent(!showcomponent)}>Rendercomponent</button> 
     {showcomponent&&<UseEffectHook/>}
     <ControlComponent/>
-    <Conditionalrendering />*/}
-    <UseMemo />
+    <Conditionalrendering />
+    <UseMemo />*/}
+    <UseCallback />
 
   </div>);
 }
