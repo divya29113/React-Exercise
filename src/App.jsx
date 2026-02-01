@@ -12,16 +12,20 @@ import ControlComponent from "./components/controlComponent";
 import Conditionalrendering from "./components/Conditionalrendering";
 import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
-
-
+import { Routes,Route } from "react-router-dom";
+import Home from "./components/websites/Home";
+import Products from "./components/websites/Products";
+import AboutUs from "./components/websites/AboutUs";
+import Contact from "./components/websites/Contact";
+import Navigation from "./components/websites/Navigation";
 
 function App() {  
   let[showcomponent,setshowcomponent]=useState(false);
-
+ 
   return (
   <div>
-    <h1>This is React course</h1>
-    {/*<Welcome/>
+    {/*<h1>This is React course</h1>
+    <Welcome/>
     <ReactHooks />
     <UseStateHook/>
     
@@ -29,9 +33,16 @@ function App() {
     {showcomponent&&<UseEffectHook/>}
     <ControlComponent/>
     <Conditionalrendering />
-    <UseMemo />*/}
-    <UseCallback />
+    <UseMemo />
+    <UseCallback />*/}
+    <Navigation />
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/products" element={<Products />} />
+      <Route path="/aboutus" element={<AboutUs/>} />
+      <Route path="/contact" element={<Contact/>} />
 
+    </Routes>
   </div>);
 }
 export default App;
