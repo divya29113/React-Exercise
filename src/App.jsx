@@ -18,6 +18,8 @@ import Products from "./components/websites/Products";
 import AboutUs from "./components/websites/AboutUs";
 import Contact from "./components/websites/Contact";
 import Navigation from "./components/websites/Navigation";
+import ProductDetails from "./components/websites/ProductDetails";
+import ParticularDetails from "./components/websites/ParticularDetails";
 
 function App() {  
   let[showcomponent,setshowcomponent]=useState(false);
@@ -38,7 +40,10 @@ function App() {
     <Navigation />
     <Routes>
       <Route path="/" element={<Home/>} />
-      <Route path="/products" element={<Products />} />
+      <Route path="/products" element={<Products />}>
+        <Route path="details" element={<ProductDetails/>}/>
+        <Route path="details/:productName" element={<ParticularDetails />}/>
+      </Route>
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/contact" element={<Contact/>} />
 
