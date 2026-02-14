@@ -20,6 +20,7 @@ import Contact from "./components/websites/Contact";
 import Navigation from "./components/websites/Navigation";
 import ProductDetails from "./components/websites/ProductDetails";
 import ParticularDetails from "./components/websites/ParticularDetails";
+import UseReducer from "./components/websites/UseReducer";
 
 function App() {  
   let[showcomponent,setshowcomponent]=useState(false);
@@ -46,6 +47,7 @@ function App() {
       </Route>
       <Route path="/aboutus" element={<AboutUs/>} />
       <Route path="/contact" element={<Contact/>} />
+      <Route path="/reducer" element={<UseReducer/>} />
 
     </Routes>
   </div>);
